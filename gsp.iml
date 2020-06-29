@@ -91,6 +91,5 @@
     <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-api:2.19.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-toolchain:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.5" level="project" />
-    <orderEntry type="library" name="Maven: com:gudusoft:1.1.1" level="project" />
   </component>
 </module>

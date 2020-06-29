@@ -2,7 +2,7 @@ name: cicd-test
 
 on:
   push:
-    branches: [ release ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
       
       - name: Build and Run Tests
         run: mvn test --batch-mode -Dmaven.test.failure.ignore=true
-        
+
       - name: Publish Test Report
         uses: scacap/action-surefire-report@v1
         with:

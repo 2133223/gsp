@@ -18,7 +18,10 @@ jobs:
           java-version: 1.8
       
       - name: Build and Run Tests
-        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true
+        run: |
+          $mvnArgs1 ="mvn test -X -Dmaven.test.skip=true".replace('-D','`-D')
+          Invoke-Expression $mvnArgs1
+          mvn test --batch-mode -Dmaven.test.failure.ignore=true
 
       - name: Publish Test Report
         uses: scacap/action-surefire-report@v1

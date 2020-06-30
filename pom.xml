@@ -45,7 +45,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <outputDirectory>target/surefire-reports/TEST-AA.html</outputDirectory>
+                    <outputDirectory>src/surefire-reports/TEST-AA.html</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

@@ -44,9 +44,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.5.1</version>
-                <!--<configuration>-->
-                    <!--<outputDirectory>${basedir}/target/surefire-reports/TEST-AA.html</outputDirectory>-->
-                <!--</configuration>-->
+                <configuration>
+                    <outputDirectory>target/surefire-reports/TEST-AA.html</outputDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
